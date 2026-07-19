@@ -26,6 +26,7 @@ export default function Hero() {
           sizes="100vw"
         />
       </div>
+      <div className="absolute inset-0 bg-black/45" />
 
       <div className="relative z-10 flex h-full flex-col ">
         <div className="h-16 shrink-0 sm-h-20" />
@@ -34,28 +35,27 @@ export default function Hero() {
           <div className="mx-auto w-full max-w-7xl px-6 sm:px-10 lg:px-14 ">
             <div className="max-w-2xl px-4">
               <p className="text-overlay-cream/70">Web Designer, Frontend Devloper</p>
-              <h1 className="mt-5  text-[clamp(2.25rem, 5vw,4.25rem)]">
+              <h1 className="mt-5 heading-clamp tracking-tighter leading-10">
                 Mordern Software <br />
                 build to think,
-                <hr />
+                <br/>
                 shipped end to end.
               </h1>
 
-              <p>
+              <p className="mt-5 max-w-xl text-overlay-cream/80 leading-[1.6]">
                 I'm Vijay Singh Negi, a Web Designer that design morder web apps
                 and responsive designs.
               </p>
             </div>
-            <div className="flex gap-4 md:gap-6 lg:gap-8">
-              <Button>
+            <div className=" mt-4 flex gap-4 md:gap-6 lg:gap-8">
+              <Button className="h-11 btn-border-reveal rounded-md px-5 text-sm font-medium hover:bg-primary-active focus-visible:ring-primary/40">
                 <Link href={"#work"} className="flex gap-3">
-                  {" "}
                   View Selected Work <ArrowUpRightIcon className="" />
                 </Link>
               </Button>
-              <Button>
+              <Button variant={"ghost"} className="h-11 rounded-md px-5 text-sm font-medium bg-overlay-cream/25 hover:bg-overlay-cream/15 hover:backdrop-blur-sm ">
                 <Link href={"#contact"}>
-                  {" "}
+            
                   Get in Touch 
                 </Link>
               </Button>

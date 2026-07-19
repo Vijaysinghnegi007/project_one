@@ -39,6 +39,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -137,6 +138,8 @@
   /* Semantic */
   --success: #1f8a65;
   --error: #cf2d56;
+
+  --radius: 0.75rem;
 }
 
 .dark {
@@ -203,6 +206,8 @@
   /* Semantic */
   --success: #33b082;
   --error: #ff5b7f;
+
+  --radius: 0.75rem;
 }
 
 @layer base {
@@ -217,12 +222,16 @@
   }
 }
 
-@layer components{
-  .caption-uppercase{
+@layer components {
+  .caption-uppercase {
     font-size: 12px;
     font-weight: 600;
-    line-height:1.4 ;
+    line-height: 1.4;
     letter-spacing: 0.08em;
     text-transform: uppercase;
   }
+  .heading-clamp {
+    font-size: clamp(2rem, 4vw, 4rem);
+  }
+
 }
