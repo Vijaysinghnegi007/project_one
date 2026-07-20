@@ -234,4 +234,8 @@
     font-size: clamp(2rem, 4vw, 4rem);
   }
 
+  .side-width{
+    @apply mx-auto w-full max-w-7xl px-6 lg:px-14
+  }
+
 }

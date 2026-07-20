@@ -22,7 +22,7 @@ const hero2 = () => {
 
           <div className="flex flex-1 items-center">
 
-            <div className="mx-auto w-full max-w-7xl px-6 lg:px-14 ">
+            <div className="side-width">
 
               <div className="max-w-2xl px-4">
                 <p className="text-overlay-cream/80">
