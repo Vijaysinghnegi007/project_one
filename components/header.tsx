@@ -17,11 +17,25 @@ const header = () => {
 
           <nav className="flex items-center gap-8 text-sm text-overlay-cream/90">
             {NAV_LINKS.map((link) => (
-              <Link key={link.href} href={link.href}>
+              <Link
+                key={link.href}
+                href={link.href}
+                className="border-b-2 border-transparent transition-all duration-300  ease-out hover:border-overlay-cream/70 active:border-overlay-cream"
+              >
                 {link.label}
               </Link>
             ))}
           </nav>
+
+          <div className="flex justify-between items-center">
+            <Link
+              href="#contact"
+              className="h-9 items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all flex border-overlay-cream/50 bg-overlay-ink/50 text-overlay-cream backdrop-blur-sm hover:bg-overlay-ink/70"
+            >
+              <span className="size-2 rounded-full bg-success" />
+              Let's Talk
+            </Link>
+          </div>
         </div>
       </div>
     </header>

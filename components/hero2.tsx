@@ -19,11 +19,8 @@ const hero2 = () => {
         <div className="absolute inset-0 bg-black/45" />
 
         <div className="relative z-10 flex h-full flex-col ">
-
           <div className="flex flex-1 items-center">
-
             <div className="side-width">
-
               <div className="max-w-2xl px-4">
                 <p className="text-overlay-cream/80">
                   Web Designer &#8226; Frontend Developer
@@ -46,10 +43,22 @@ const hero2 = () => {
                     View Selected Work <ArrowUpRightIcon className="" />
                   </Link>
                 </Button>
-                <Button variant={"ghost"} className="bg-overlay-cream/25 hover:bg-overlay-cream/15 ">
+                <Button
+                  variant={"ghost"}
+                  className="bg-overlay-cream/25 hover:bg-overlay-cream/15 "
+                >
                   Get in Touch
                 </Button>
               </div>
+            </div>
+          </div>
+
+          <div className="shrink-0 pb-7 sm:pb-9">
+            <div className="side-width">
+              <p className="flex ">
+                <span className="size-2 rounded-full bg-success" />
+                <span>Availabe for New Work</span>
+              </p>
             </div>
           </div>
         </div>
