@@ -1,6 +1,7 @@
+"use client";
 import { NAV_LINKS } from "@/lib/context";
-import { link } from "fs";
 import Link from "next/link";
+import ThemeToggle from "@/components/theme-toggle";
 
 const header = () => {
   return (
@@ -35,6 +36,8 @@ const header = () => {
               <span className="size-2 rounded-full bg-success" />
               Let's Talk
             </Link>
+
+            <ThemeToggle />
           </div>
         </div>
       </div>

@@ -92,31 +92,31 @@ export const NAV_LINKS = [
   { label: "Approach", href: "#process" },
   { label: "Stack", href: "#stack" },
   { label: "About", href: "#about" },
-] as const
+] as const;
 
 // --- Practice strip -------------------------------------------------------
 // components/practice-strip.tsx — the thin band of practice areas.
 export const PRACTICE_AREAS = [
-  { k: "01", v: "AI SaaS products" },
-  { k: "02", v: "Full-stack systems" },
-  { k: "03", v: "Workflow automation" },
-  { k: "04", v: "Product UI" },
-  { k: "05", v: "API-first architecture" },
-] as const
+  { no: "01", value: "AI SaaS products" },
+  { no: "02", value: "Full-stack systems" },
+  { no: "03", value: "Workflow automation" },
+  { no: "04", value: "Product UI" },
+  { no: "05", value: "API-first architecture" },
+] as const;
 
 // --- Selected work --------------------------------------------------------
 // components/selected-work.tsx — the project carousel.
 export type Project = {
-  index: string
-  title: string
-  description: string
-  year: string
-  status: string
-  tags: readonly string[]
-  href: string
-  image: string
-  imageAlt: string
-}
+  index: string;
+  title: string;
+  description: string;
+  year: string;
+  status: string;
+  tags: readonly string[];
+  href: string;
+  image: string;
+  imageAlt: string;
+};
 
 export const PROJECTS: readonly Project[] = [
   {
@@ -184,7 +184,7 @@ export const PROJECTS: readonly Project[] = [
     imageAlt:
       "Data labeling platform annotating a room scene with bounding boxes, a reviewer queue, and a quality score panel.",
   },
-]
+];
 
 // --- Capabilities ---------------------------------------------------------
 // components/capabilities.tsx — the three practice cards. Cards map to the
@@ -229,7 +229,7 @@ export const CAPABILITIES = [
       "Prototyping",
     ],
   },
-] as const
+] as const;
 
 // --- Approach -------------------------------------------------------------
 // components/approach.tsx — the four ordered process steps.
@@ -254,7 +254,7 @@ export const APPROACH_STEPS = [
     t: "Refine until it feels effortless",
     d: "The last 20% is where products stop feeling like demos. Latency, copy, motion, edge cases — sanded down until they disappear.",
   },
-] as const
+] as const;
 
 // --- Stack ----------------------------------------------------------------
 // components/stack.tsx — the editor-mockup panes. Each item is [name, tag].
@@ -297,7 +297,7 @@ export const STACK_PANES = [
       ["PostHog / Sentry", "observability"],
     ],
   },
-] as const
+] as const;
 
 // --- About ----------------------------------------------------------------
 // components/contact.tsx (About band) — the meta definition list. [key, value].
@@ -307,7 +307,7 @@ export const ABOUT_META = [
   ["Years shipping", "6+"],
   ["Availability", "Selected product builds"],
   ["Engagements", "Fractional · Build · Advisory"],
-] as const
+] as const;
 
 // --- Site footer ----------------------------------------------------------
 // components/site-footer.tsx — link columns. Each link is [label, href].
@@ -337,26 +337,25 @@ export const FOOTER_COLUMNS = [
       ["X / Twitter ↗", "https://x.com/code_bucks"],
     ],
   },
-] as const
+] as const;
 
 // --- Token-usage widget ---------------------------------------------------
 // components/widgets/token-usage.tsx — sample usage rows.
-export type Vendor = "Anthropic" | "OpenAI" | "Google" | "Mistral"
+export type Vendor = "Anthropic" | "OpenAI" | "Google" | "Mistral";
 
 export type UsageRow = {
-  model: string
-  vendor: Vendor
-  tokens: number
-  costUsd: number
-}
+  model: string;
+  vendor: Vendor;
+  tokens: number;
+  costUsd: number;
+};
 
 export const TOKEN_USAGE: UsageRow[] = [
   { model: "Opus 4.7", vendor: "Anthropic", tokens: 8_230_000, costUsd: 211 },
   { model: "Sonnet 4.6", vendor: "Anthropic", tokens: 2_400_000, costUsd: 42 },
   { model: "Haiku 4.5", vendor: "Anthropic", tokens: 1_140_000, costUsd: 19 },
   { model: "GPT-5", vendor: "OpenAI", tokens: 730_000, costUsd: 12 },
-]
-
+];
 
 /* 
 Navigation Bar Variants:
