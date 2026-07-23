@@ -8,10 +8,10 @@ function PracticeStrip() {
           {PRACTICE_AREAS.map((item, index) => (
             <li
               key={index}
-              className="flex flex-col gap-1.5 px-2 lg:px-5 border-left "
+              className="flex flex-col gap-1.5 px-2 lg:px-5 border-left"
             >
-              <span className="text-muted-ink uppercase font-mono text-2xl">{item.no}</span>
-              <span>{item.value}</span>
+              <span className="text-muted-ink uppercase font-mono text-sm">{item.no}</span>
+              <span className="text-sm font-medium  text-ink">{item.value}</span>
             </li>
           ))}
         </ul>
