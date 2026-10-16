@@ -1,18 +1,12 @@
-// We'll replace this piece by piece as we build each section in the video.
-// import Hero from "@/components/hero";
-import Hero2 from "@/components/hero2"
-import PracticeStrip from "@/components/practice-strip"
-import  {getLocation} from "@/lib/location" 
-export default async function HomePage() {
-
-  const location = await getLocation()
-  console.log(location)
-
+import Hero from "@/components/section/Hero";
+import About from "@/components/section/about";
+import Projects from "@/components/section/projects";
+export default function Home() {
   return (
-    <main className="relative">
-      {/* <Hero></Hero> */}
-      <Hero2></Hero2>
-      <PracticeStrip></PracticeStrip>
+    <main>
+      <Hero></Hero>
+      <About></About>
+      <Projects></Projects>
     </main>
   );
 }
